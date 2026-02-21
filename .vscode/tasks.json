@@ -1,0 +1,28 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build and run t.java",
+      "type": "shell",
+      "command": "cmd.exe",
+      "args": [
+        "/c",
+        "javac t.java && java t < input.txt > output.txt"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": [],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "presentation": {
+        "reveal": "never",
+        "focus": false,
+        "close": false,
+        "panel": "dedicated"
+      }
+    }
+  ]
+}
